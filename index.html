@@ -181,11 +181,12 @@
     <body>
         <div>
             <fieldset>
-            <select id="select"  onChange="onAreaChanged()">
+            <select id="select"  onChange="onAreaChanged()" tabindex="1">
           <option selected="true" disabled="disabled">Выберите район</option>
              </select>
-                
-            <p>Каталог: <select id="rubric" onChange="onCategoryChanged()">
+             </fieldset>    
+            <fieldset>
+            <p>Каталог: <select id="rubric" onChange="onCategoryChanged()" tabindex="2">
                
                <option value="Стоматологии">Стоматологии</option>
                <option value="Аптека">Аптеки</option>
@@ -197,7 +198,7 @@
 
             </fieldset>
             <fieldset>
-        <div id="map" style="width:750px; height:750px; margin: 4px 0px"></div>
+        <div id="map" style="width:750px; height:750px; margin: 4px 0px" tabindex="3"></div>
               </fieldset>  
         </div>
     </body>
