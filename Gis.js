@@ -43,7 +43,6 @@ function getCategories(callback){
     xhr.send();
 
 }
-
 //запрос областей
 function getAreas(callback){
 
